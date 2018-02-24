@@ -13,12 +13,12 @@
   <body>
     <div id='shop' class='container mt-4'>
       <h4>Ihr Online Supermarkt</h4>
-				<hr>
-				<p>Bitte wählen Sie eines unserer Produkte.</p>
-        <div id='no-selection' class="alert alert-danger invisible" role="alert">
+			<hr>
+  		<div id='productselector'>
+        <p>Bitte wählen Sie eines unserer Produkte.</p>
+        <div id='no-selection' class="alert alert-danger d-none" role="alert">
           Sie müssen eines der zwei Optionen auswählen.
         </div>
-  		<div id='productselector'>
         <div class='row text-center'>
     			<div class="col-6 text-center">
   					<img id='imageFirst' class="img-fluid">
@@ -37,11 +37,69 @@
       			</div>
           </div>
         </form>
+        <button type="button" class="btn btn-primary btn-block" onclick="getConfirmation()">Auswählen</button>
   		</div>
-      <button type="button" class="btn btn-primary float-right" onclick="handleSelection()">Weiter</button>
+      <div id='confirmation' class='d-none'>
+        <p>Sie haben sich für eine Produkt entschieden. Bitte geben Sie ergänzed an, wie sehr Sie zu Ihrer getroffenen Entscheidung tendieren, d.h. je sicherer Sie sich gerade bei Ihrer Entscheidung waren, desto stärker die Tendenz.</p>
+    		<div id='no-tendency' class="alert alert-danger d-none" role="alert">
+    		Bitte wählen Sie eine Antwortmöglichkeit aus und klicken Sie auf "Weiter".
+    		</div>
+        <form id='form_tendency'>
+      		<div class="row" id="fuzzyradio">
+      			<div class="col-md-2">
+      				<div class="radio text-center">
+      				    <label>
+      					    <input type="radio" name="optionsRadiosfuzzy" id="optionsRadiosfuzzy1" value="1">
+      						Sehr schwache Tendenz...
+      				    </label>
+      				</div>
+      			</div>
+      			<div class="col-md-2">
+      					<div class="radio text-center">
+      				    <label>
+      					    <input type="radio" name="optionsRadiosfuzzy" id="optionsRadiosfuzzy2" value="2">
+      					    Schwache Tendenz...
+      				    </label>
+      				</div>
+      			</div>
+      			<div class="col-md-2">
+      					<div class="radio text-center">
+      				    <label>
+      					    <input type="radio" name="optionsRadiosfuzzy" id="optionsRadiosfuzzy3" value="3">
+      					    Eher schwache Tendenz...
+      				    </label>
+      				</div>
+      			</div>
+      			<div class="col-md-2">
+      					<div class="radio text-center">
+      				    <label>
+      					    <input type="radio" name="optionsRadiosfuzzy" id="optionsRadiosfuzzy4" value="4">
+      					    Eher starke Tendenz...
+      				    </label>
+      				</div>
+      			</div>
+      			<div class="col-md-2">
+      					<div class="radio text-center">
+      				    <label>
+      					    <input type="radio" name="optionsRadiosfuzzy" id="optionsRadiosfuzzy5" value="5">
+      					    Starke Tendenz...
+      				    </label>
+      				</div>
+      			</div>
+      			<div class="col-md-2">
+      					<div class="radio text-center">
+      				    <label>
+      					    <input type="radio" name="optionsRadiosfuzzy" id="optionsRadiosfuzzy6" value="6">
+      					    Sehr starke Tendenz...
+      				    </label>
+      				</div>
+      			</div>
+      			... zur gewählten Alternative.
+      		</div>
+        </form>
+        <button type="button" class="btn btn-primary btn-block" onclick="handleSelection()">Weiter</button>
+      </div>
     </div>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
