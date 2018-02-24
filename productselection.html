@@ -11,36 +11,35 @@
     <title>Online Shop Experiment</title>
   </head>
   <body>
-    <div class='container'>
-      <p><h4>Ihr Online Supermarkt</h4></p>
+    <div id='shop' class='container mt-4'>
+      <h4>Ihr Online Supermarkt</h4>
 				<hr>
 				<p>Bitte wählen Sie eines unserer Produkte.</p>
-			</div>
-		</div>
-		<div class="row" id="abschlussradio">
-			<div class="col-md-6">
-					<img src="img/abschluss/BioRispentomaten.png"  width="300">
-			</div>
-
-			<div class="col-md-6">
-					<img src="img/abschluss/Rispentomaten.png"  width="300">
-			</div>
-		</div>
-		<div class="row" id="abschlussradio2">
-			<div class="col-md-6">
-				<div class="radio text-center">
-					<input type="radio" name="optionsRadios" id="optionsRadios1" value="online" checked="checked">
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="radio text-center">
-					<input type="radio" name="optionsRadios" id="optionsRadios2" value="filiale">
-				</div>
-			</div>
-		</div>
-		<hr>
-      <button type="button" class="btn btn-primary float-right" onclick="navigateToTendencyPage()">Weiter</button>
-      </div>
+        <div id='no-selection' class="alert alert-danger invisible" role="alert">
+          Sie müssen eines der zwei Optionen auswählen.
+        </div>
+  		<div id='productselector'>
+        <div class='row text-center'>
+    			<div class="col-6 text-center">
+  					<img id='imageFirst' class="img-fluid">
+    			</div>
+    			<div class="col-6 text-center">
+  					<img id='imageLast' class="img-fluid">
+    			</div>
+        </div>
+        <form id='form'>
+          <div class='row text-center'>
+      			<div class="col-6 radio text-center">
+    					<input type="radio" name="optionsRadios" id="optionFirst">
+      			</div>
+      			<div class="col-6 radio text-center">
+    					<input type="radio" name="optionsRadios" id="optionLast">
+      			</div>
+          </div>
+        </form>
+  		</div>
+      <button type="button" class="btn btn-primary float-right" onclick="handleSelection()">Weiter</button>
+    </div>
 
 
     <!-- Optional JavaScript -->
@@ -49,6 +48,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="scripts.js"></script>
+    <script src="handleExperiment.js"></script>
   </body>
 </html>
