@@ -57,14 +57,23 @@ window.onload = function (){
   }
 }
 
-function handleSelection() {
+function getConfirmation() {
   if(! isOneChecked(document.getElementsByName('optionsRadios'))){
-    document.getElementById('no-selection').classList.remove('invisible');
+    document.getElementById('no-selection').classList.remove('d-none');
   }
   else {
     //hide warning if exists
-    document.getElementById('no-selection').classList.add('invisible');
+    document.getElementById('no-selection').classList.add('d-none');
+    document.getElementById('productselector').classList.add('d-none');
+    document.getElementById('confirmation').classList.remove('d-none');
+  }
+}
 
+function handleSelection() {
+  if (! isOneChecked(document.getElementsByName('optionsRadiosfuzzy'))){
+    document.getElementById('no-tendency').classList.remove('d-none');
+  }
+  else {
     //save data to sessionStorage
     let currentItem = items[clicks];
     console.log(currentItem);
@@ -75,13 +84,15 @@ function handleSelection() {
     else if(document.getElementById('optionLast').checked) {
       sessionStorage.setItem(currentItem.productName+'Bio', currentItem.bioFirst ? false : true)
     }
+    sessionStorage.setItem(currentItem.productName+'Tendency', getTendencyNumber(document.getElementsByName('optionsRadiosfuzzy')));
 
     document.getElementById('form').reset();
+    document.getElementById('form_tendency').reset();
     ++clicks;
 
     //if all four items selected, go to next page
     if (clicks >= AMOUNT_SELECTIONS) {
-      window.location='tendency.html';
+      window.location='shoppingcart.html';
     }
     //otherwise, prepare next page
     else {
@@ -99,6 +110,9 @@ function handleSelection() {
         document.getElementById('imageFirst').src="img/" + items[clicks].image;
         document.getElementById('imageLast').src="img/" + items[clicks].imageBio;
       }
+      document.getElementById('no-tendency').classList.add('d-none');
+      document.getElementById('productselector').classList.remove('d-none');
+      document.getElementById('confirmation').classList.add('d-none');
     }
   }
 }
@@ -120,6 +134,15 @@ function isOneChecked(chx) {
   for (var i=0; i<chx.length; i++) {
     if (chx[i].type == 'radio' && chx[i].checked) {
       return true;
+    }
+  }
+  return false;
+}
+
+function getTendencyNumber(chx) {
+  for (var i=0; i<chx.length; i++) {
+    if (chx[i].type == 'radio' && chx[i].checked) {
+      return chx[i].value;
     }
   }
   return false;
