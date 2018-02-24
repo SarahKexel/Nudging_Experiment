@@ -1,17 +1,10 @@
-function correctSelection() {
-  if(!document.getElementsById('optionsfeldRadio1').checked && !document.getElementsByName('optionsfeldRadio5').checked)){
-    document.getElementById('no-selection').classList.remove('invisible');
+function testSelection() {
+  if(document.getElementById('optionsfeldRadio1').checked && document.getElementById('optionsfeldRadio5').checked){
+    document.getElementById('no-selection').classList.add('d-none');
+    window.location='productdescription.html';
   }
   else {
-    //hide warning if exists
-    document.getElementById('no-selection').classList.add('invisible');
-
-
-function isOneChecked(chx) {
-  for (var i=0; i<chx.length; i++) {
-    if (chx[i].type == 'radio' && chx[i].checked) {
-      return true;
-    }
+    //show warning if selection false
+    document.getElementById('no-selection').classList.remove('d-none');
   }
-  return false;
 }
