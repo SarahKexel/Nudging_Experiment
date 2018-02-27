@@ -92,7 +92,8 @@ function handleSelection() {
 
     //if all four items selected, go to next page
     if (clicks >= AMOUNT_SELECTIONS) {
-      if (Math.random() >= 0.5;) {
+      let directToShoppingCart = Math.random() >= 0.5;
+      if (directToShoppingCart) {
         window.location='shoppingcart.html';
       }
       else {
