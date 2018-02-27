@@ -92,7 +92,12 @@ function handleSelection() {
 
     //if all four items selected, go to next page
     if (clicks >= AMOUNT_SELECTIONS) {
-      window.location='shoppingcart.html';
+      if (Math.random() >= 0.5;) {
+        window.location='shoppingcart.html';
+      }
+      else {
+        window.location='shoppingcartChoice.html';
+      }
     }
     //otherwise, prepare next page
     else {
