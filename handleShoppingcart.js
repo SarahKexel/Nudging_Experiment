@@ -1,21 +1,35 @@
-var x = productStorage(sessionStorage.getItem('tomatosBio'), 'tomatos');
-document.getElementById("imageTomatos").src = x;
+const tomatosBio = sessionStorage.getItem('tomatosBio');
+const bananasBio = sessionStorage.getItem('bananasBio');
+const coffeeBio = sessionStorage.getItem('coffeeBio');
+const milkBio = sessionStorage.getItem('milkBio');
 
-var x = productStorage(sessionStorage.getItem('bananasBio'), 'bananas');
-document.getElementById("imageBananas").src = x;
+setImageForProduct('tomatos', tomatosBio);
+setImageForProduct('bananas', bananasBio);
+setImageForProduct('coffee', coffeeBio);
+setImageForProduct('milk', milkBio);
 
-var x = productStorage(sessionStorage.getItem('coffeeBio'), 'coffee');
-document.getElementById("imageCoffee").src = x;
+setProductName('Rispentomaten', tomatosBio);
+setProductName('Bananen', bananasBio);
+setProductName('Kaffee', coffeeBio);
+setProductName('Milch', milkBio);
 
-var x = productStorage(sessionStorage.getItem('milkBio'), 'milk');
-document.getElementById("imageMilk").src = x;
-
-function productStorage(a, b) {
-  if (a == 'true') {
-  image = "img/bio_" + b + ".png";
+function setProductName(productName, bioChoice){
+  var printName = '';
+  if (bioChoice == 'true') {
+    printName = "Bio " + productName + "";
   }
   else {
-  image = "img/" + b + ".png";
+    printName = productName;
   }
-    return image;
+  document.getElementById(productName).innerHTML = printName;
 }
+
+function setImageForProduct(productName, bioChoice){
+  if (bioChoice == 'true') {
+    image = "img/bio_" + productName + ".png";
+  }
+  else {
+    image = "img/" + productName + ".png";
+  }
+  document.getElementById("image"+productName).src = image;
+};

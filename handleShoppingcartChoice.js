@@ -17,15 +17,6 @@ function setDefault(isBio, product){
   }
 }
 
-/**benötigt? Denn es ist ja immer mind 1 ausgewählt
-function handleSelectionChoice() {
-  if (! isOneChecked(document.getElementsByName('tomatosOptionsRadios')) ||
-      ! isOneChecked(document.getElementsByName('bananasOptionsRadios')) ||
-      ! isOneChecked(document.getElementsByName('coffeeOptionsRadios')) ||
-      ! isOneChecked(document.getElementsByName('milkOptionsRadios'))){
-    document.getElementById('no-tendency').classList.remove('d-none');
-  }
-}*/
 function startSetStorage () {
   setStorage('tomatos');
   setStorage('bananas');
@@ -41,13 +32,3 @@ function setStorage (product) {
     sessionStorage.setItem(product +'Bio2', false)
   }
 }
-
-/**
-function isOneChecked(chx) {
-  for (var i=0; i<chx.length; i++) {
-    if (chx[i].type == 'radio' && chx[i].checked) {
-      return true;
-    }
-  }
-  return false;
-}*/

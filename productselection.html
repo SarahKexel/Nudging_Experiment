@@ -20,23 +20,33 @@
           Sie müssen eines der zwei Optionen auswählen.
         </div>
         <form id='form'>
-          <div class='row text-center'>
-            <div class="col-1">
-            </div>
-      			<div class="col-5 text-center">
+          <div class='row justify-content-center'>
+      			<div class="col-6 col-md-4 text-center">
               <label>
-      					<img id='imageFirst' class="img-fluid">
-                <input type="radio" name="optionsRadios" id="optionFirst">
+                <div class="card">
+        					<img id='imageFirst' class="card-img-top" style="max-height: 100px, max-width: 100px">
+                  <div class="card-body">
+                    <h5 id="productNameFirst" class="card-title"></h5>
+                    <input type="radio" name="optionsRadios" id="optionFirst">
+                  </div>
+                </div>
               </label>
       			</div>
-      			<div class="col-5 text-center">
+      			<div class="col-6 col-md-4 text-center">
               <label>
-      					<img id='imageLast' class="img-fluid">
-                <input type="radio" name="optionsRadios" id="optionLast">
+                <div class="card">
+      					  <img id='imageLast' class="card-img-top" style="max-height: 100px, max-width: 100px;">
+                  <div class="card-body">
+                    <h5 id="productNameLast" class="card-title"></h5>
+                    <input type="radio" name="optionsRadios" id="optionLast">
+                  </div>
+                </div>
               </label>
       			</div>
           </div>
         </form>
+        <hr>
+        <button type="button" class="btn btn-primary float-right" onclick="getConfirmation()">Auswählen</button>
   		</div>
 
       <div id='confirmation' class='d-none'>
@@ -97,10 +107,8 @@
       			... zur gewählten Alternative.
       		</div>
         </form>
-<<<<<<< HEAD
-        <button type="button" class="btn btn-primary btn-block" onclick="handleSelection()">Weiter</button>
-=======
->>>>>>> bac4a0cc519930dc4c4fdbc23bf1539e286eb3e9
+        <hr>
+        <button type="button" class="btn btn-primary float-right" onclick="handleSelection()">Weiter</button>
       </div>
     </div>
     <!-- Optional JavaScript -->
