@@ -7,6 +7,8 @@ const items = [
     printName: 'Tomaten',
     image: 'tomatos.png',
     imageBio: 'bio_tomatos.png',
+    productDescriptionBio: '<h6><b>Produktbeschreibung:</b></h6><p>Strauch-, Rispen- oder Buschtomaten sind Tomaten, die mit Kelch und Stielen geerntet werden. Es gibt Cherry-, Roma- und runde Tomaten mit Rispe. Fruchtig (viel Fruchtsäure). Tomaten waschen und den Stängelansatz sowie grüne Stellen gründlich entfernen, diese enthalten Solanin, einen Stoff der gesundheitsschädlich ist und u.a. Kopfschmerzen verursachen kann. Tomaten sind druck- und transportempfindlich. Tomaten nicht im Kühlschrank aufbewahren, da sie dann an Aroma verlieren, glasig und vorzeitig weich werden.</p><h6><b>Eigenschaften:</b></h6><p>Bio<br>Umweltverträgliche und ressourcenschonend Produktion.</br></p><h6><b>Ursprungsland:</b></h6><p>Spanien oder Deutschland; Kl.: II; Ursprungsland und Klasse können je nach Angebot abweichen.</p>',
+    productDescription: '<h6><b>Produktbeschreibung:</b></h6><p>Strauch-, Rispen- oder Buschtomaten sind Tomaten, die mit Kelch und Stielen geerntet werden. Es gibt Cherry-, Roma- und runde Tomaten mit Rispe. Fruchtig (viel Fruchtsäure). Tomaten waschen und den Stängelansatz sowie grüne Stellen gründlich entfernen, diese enthalten Solanin, einen Stoff der gesundheitsschädlich ist und u.a. Kopfschmerzen verursachen kann. Tomaten sind druck- und transportempfindlich. Tomaten nicht im Kühlschrank aufbewahren, da sie dann an Aroma verlieren, glasig und vorzeitig weich werden.</p><h6><b>Ursprungsland:</b></h6><p>Marokko oder Spanien; Kl.: I; Ursprungsland und Handelsklasse können je nach Angebot abweichen. </p>',
     nudge: Math.random() >= 0.5,
     bioFirst: Math.random() >= 0.5,
   },
@@ -16,6 +18,8 @@ const items = [
     printName: 'Bananen',
     image: 'bananas.png',
     imageBio: 'bio_bananas.png',
+    productDescriptionBio: '<h6><b>Produktbeschreibung:</b></h6><p>Bananen werden grün geerntet, denn sie reifen nach. Sie werden auf besonderen Bananenschiffen in die Verbraucherländer transportiert. Vorwiegend angebaut in Ecuador, Panama, Costa Rica, Kolumbien und Dominikanische Republik. Fleischig, aromatisch und je nach Reifegrad von leicht säuerlich bis sehr süß. Bananen vor Zugluft schützen! Bei zu kühlen Temperaturen färbt sich die Schale gelblich-grau bis schwarz und es kommt zu Aromaverlusten. Sie liefern schnell Energie und stellen eine gute Zwischenmahlzeit auch für unterwegs dar. Die Krümmung der Banane entsteht während des Wachstums hormonbedingt.</p><h6><b>Eigenschaften:</b></h6><p>Bio<br>Umweltverträgliche und ressourcenschonend Produktion.</br></p><h6><b>Ursprungsland:</b></h6><p>Dominikanische Republik, Ecuador oder Peru; Kl.: M; Ursprungsland und Klasse können je nach Angebot abweichen.</p>',
+    productDescription: '<h6><b>Produktbeschreibung:</b></h6><p>Bananen werden grün geerntet, denn sie reifen nach. Sie werden auf besonderen Bananenschiffen in die Verbraucherländer transportiert. Vorwiegend angebaut in Ecuador, Panama, Costa Rica, Kolumbien und Dominikanische Republik. Fleischig, aromatisch und je nach Reifegrad von leicht säuerlich bis sehr süß. Bananen vor Zugluft schützen! Bei zu kühlen Temperaturen färbt sich die Schale gelblich-grau bis schwarz und es kommt zu Aromaverlusten. Sie liefern schnell Energie und stellen eine gute Zwischenmahlzeit auch für unterwegs dar. Die Krümmung der Banane entsteht während des Wachstums hormonbedingt.</p><h6><b>Ursprungsland:</b></h6><p>Kl.: M; Ursprungsland und Klasse können je nach Angebot abweichen.</p>',
     nudge: Math.random() >= 0.5,
     bioFirst: Math.random() >= 0.5,
   },
@@ -25,6 +29,8 @@ const items = [
     printName: 'Kaffee',
     image: 'coffee.png',
     imageBio: 'bio_coffee.png',
+    productDescriptionBio: '<h6><b>Produktbeschreibung:</b></h6><p>Schonend geröstete Bohnen aus 100% Arabica verleihen diesem besonderen Kaffeegenuss ein einzigartiges Aroma. Trocken lagern und vor Wärme schützen.<br>Mild. Gemahlener Röstkaffee.</br></p><h6><b>Eigenschaften:</b></h6><p>Bio<br>Umweltverträgliche und ressourcenschonend Produktion.</br></p><h6><b>Ursprungsland:</b></h6><p>Deutschland</p>',
+    productDescription: '<h6><b>Produktbeschreibung:</b></h6><p>Schonend geröstete Bohnen aus 100% Arabica verleihen diesem besonderen Kaffeegenuss ein einzigartiges Aroma. Trocken lagern und vor Wärme schützen.<br>Mild. Gemahlener Röstkaffee.</br></p><h6><b>Ursprungsland:</b></h6><p>Deutschland</p>',
     nudge: Math.random() >= 0.5,
     bioFirst: Math.random() >= 0.5,
   },
@@ -34,6 +40,8 @@ const items = [
     printName: 'Milch',
     image: 'milk.png',
     imageBio: 'bio_milk.png',
+    productDescriptionBio: '<h6><b>Produktbeschreibung:</b></h6><p>Bei diesen Produkten bieten wir Ihnen beste Frische und Qualität. Bitte beachten Sie daher, dass frische Milch nur eine kurze Restlaufzeit hat.<br>Frische fettarme Bio Milch, 1,5 % Fett, pasteurisiert, homogenisiert, länger haltbar.</br><p/><h6><b>Eigenschaften:</b></h6><p>Bio<br>Umweltverträgliche und ressourcenschonend Produktion.</br></p><h6><b>Ursprungsland:</b></h6><p>Deutschland</p>',
+    productDescription: '<h6><b>Produktbeschreibung:</b></h6><p>Bei diesen Produkten bieten wir Ihnen beste Frische und Qualität. Bitte beachten Sie daher, dass frische Milch nur eine kurze Restlaufzeit hat.<br>Frische fettarme Milch, 1,5 % Fett, pasteurisiert, homogenisiert, länger haltbar.</br><p/><h6><b>Ursprungsland:</b></h6><p>Deutschland</p>',
     nudge: Math.random() >= 0.5,
     bioFirst: Math.random() >= 0.5,
   },
@@ -58,8 +66,11 @@ window.onload = function (){
     }
     document.getElementById('imageFirst').src="img/" + items[clicks].imageBio;
     document.getElementById('imageLast').src="img/" + items[clicks].image;
-    document.getElementById('productNameFirst').innerHTML="Bio " + items[clicks].printName;
+    document.getElementById('productNameFirst').innerHTML= "Bio " + items[clicks].printName;
     document.getElementById('productNameLast').innerHTML=items[clicks].printName;
+    document.getElementById('productDescriptionFirst').innerHTML=items[clicks].productDescriptionBio;
+    document.getElementById('productDescriptionLast').innerHTML=items[clicks].productDescription;
+
   }
   else{
     if(items[clicks].nudge){
@@ -67,8 +78,10 @@ window.onload = function (){
     }
     document.getElementById('imageFirst').src="img/" + items[clicks].image;
     document.getElementById('imageLast').src="img/" + items[clicks].imageBio;
-    document.getElementById('productNameFirst').innerHTML=items[clicks].printName;
+    document.getElementById('productNameFirst').innerHTML= items[clicks].printName;
     document.getElementById('productNameLast').innerHTML="Bio "+ items[clicks].printName;
+    document.getElementById('productDescriptionFirst').innerHTML= items[clicks].productDescription;
+    document.getElementById('productDescriptionLast').innerHTML=items[clicks].productDescriptionBio;
   }
 }
 
@@ -89,6 +102,28 @@ function getConfirmation() {
 
 //function to be called when user presses the "Weiter" button on the tendency selection site
 function handleSelection() {
+  var notext = document.getElementById("productDescriptionFirst");
+  var text = document.getElementById("displayTextFirst");
+	if(notext.style.display = "block") {
+    notext.style.display = "none";
+		text.innerHTML = "Mehr Infos anzeigen.";
+  	}
+	else {
+		notext.style.display = "none";
+		text.innerHTML = "Mehr Infos anzeigen.";
+  }
+  var notext = document.getElementById("productDescriptionLast");
+  var text = document.getElementById("displayTextLast");
+	if(notext.style.display = "block") {
+    notext.style.display = "none";
+		text.innerHTML = "Mehr Infos anzeigen.";
+  	}
+	else {
+		notext.style.display = "none";
+		text.innerHTML = "Mehr Infos anzeigen.";
+  }
+
+
   //if no selection is made, view warning to user
   if (! isOneChecked(document.getElementsByName('optionsRadiosfuzzy'))){
     document.getElementById('no-tendency').classList.remove('d-none');
@@ -118,10 +153,10 @@ function handleSelection() {
 
     //if all four items selected, go to next page
     if (clicks >= AMOUNT_SELECTIONS) {
-      //randomize which shopping cart is shown to user
+      //randomize if Disclosure is shown to user
       let directToShoppingCart = Math.random() >= 0.5;
       if (directToShoppingCart) {
-        window.location='shoppingcart.html';
+        window.location='shoppingcartChoice.html';
       }
       else {
         window.location='nudgeDisclosure.html';
@@ -152,7 +187,7 @@ function handleSelection() {
       }
       //hide warning if exists
       document.getElementById('no-tendency').classList.add('d-none');
-      //display producselector and hide tendency selector 
+      //display producselector and hide tendency selector
       document.getElementById('productselector').classList.remove('d-none');
       document.getElementById('confirmation').classList.add('d-none');
     }
@@ -188,4 +223,24 @@ function getTendencyNumber(chx) {
     }
   }
   return false;
+}
+
+function toggle(position) {
+  console.log();
+  if (position == 'First'){
+    var notext = document.getElementById("productDescriptionFirst");
+  	var text = document.getElementById("displayTextFirst");
+  }
+  else {
+    var notext = document.getElementById("productDescriptionLast");
+  	var text = document.getElementById("displayTextLast");
+  }
+  if(notext.style.display == "block") {
+    notext.style.display = "none";
+    text.innerHTML = "Mehr Infos anzeigen.";
+    }
+  else {
+    notext.style.display = "block";
+    text.innerHTML = "Infos ausblenden.";
+	}
 }
