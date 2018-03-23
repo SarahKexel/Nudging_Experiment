@@ -1,14 +1,14 @@
-const tomatosBio = sessionStorage.getItem('tomatosBio');
+const tomatoesBio = sessionStorage.getItem('tomatoesBio');
 const bananasBio = sessionStorage.getItem('bananasBio');
 const coffeeBio = sessionStorage.getItem('coffeeBio');
 const milkBio = sessionStorage.getItem('milkBio');
 
-setImageForProduct('tomatos', tomatosBio);
+setImageForProduct('tomatoes', tomatoesBio);
 setImageForProduct('bananas', bananasBio);
 setImageForProduct('coffee', coffeeBio);
 setImageForProduct('milk', milkBio);
 
-setProductName('Rispentomaten', tomatosBio);
+setProductName('Rispentomaten', tomatoesBio);
 setProductName('Bananen', bananasBio);
 setProductName('Kaffee', coffeeBio);
 setProductName('Milch', milkBio);

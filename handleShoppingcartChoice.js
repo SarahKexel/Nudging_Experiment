@@ -1,9 +1,9 @@
-var isTomatosBio = sessionStorage.getItem('tomatosBio');
+var isTomatoesBio = sessionStorage.getItem('tomatoesBio');
 var isBananasBio = sessionStorage.getItem('bananasBio');
 var isCoffeeBio = sessionStorage.getItem('coffeeBio');
 var isMilkBio = sessionStorage.getItem('milkBio');
 
-setDefault(isTomatosBio, 'tomatos');
+setDefault(isTomatoesBio, 'tomatoes');
 setDefault(isBananasBio, 'bananas');
 setDefault(isCoffeeBio, 'coffee');
 setDefault(isMilkBio, 'milk');
@@ -18,7 +18,7 @@ function setDefault(isBio, product){
 }
 
 function startSetStorage () {
-  setStorage('tomatos');
+  setStorage('tomatoes');
   setStorage('bananas');
   setStorage('coffee');
   setStorage('milk');

@@ -14,60 +14,57 @@
     <div class='container mt-5'>
       <h4>Ihr KIT Online Supermarkt</h4>
       <hr>
-      <p>Bitte informieren Sie sich im Online Supermarkt über die verschiedenen Produkte. Alle Produktbeschreibungen zu den wählbaren Produkten finden Sie in den verschiedenen Produktkategorien. Klicken Sie auf „Weiter“, wenn Sie sich über alle Produkte informiert haben. Eine spätere Einsicht wird nicht mehr möglich sein.</p>
+      <p>Hier können Sie sich über die verschiedenen Produkte im Online Supermarkt informieren. Alle Produktbeschreibungen zu den wählbaren Produkten finden Sie in den verschiedenen Produktkategorien. Klicken Sie auf „Weiter“, wenn Sie sich über alle Produkte informiert haben.</p>
+      <div id='no-selection' class="alert alert-danger d-none" role="alert">
+        Bitte bestätigen Sie, dass Sie alle Informationen gelesen haben.
+      </div>
       <p></p>
         <ul class="nav nav-tabs nav-justified" role="tablist">
-    			<li class="nav-item"><a class="nav-link active" href="#tomatos" aria-controls="tomatos" role="tab" data-toggle="tab">Tomaten</a></li>
-    			<li class="nav-item"><a class="nav-link" href="#bananas" aria-controls="bananas" role="tab" data-toggle="tab">Bananen</a></li>
-    			<li class="nav-item"><a class="nav-link" href="#coffee" aria-controls="coffee" role="tab" data-toggle="tab">Kaffee</a></li>
-    			<li class="nav-item"><a class="nav-link" href="#milk" aria-controls="milk" role="tab" data-toggle="tab">Milch</a></li>
+    			<li class="nav-item"><a class="nav-link active" href="#product1"  role="tab" data-toggle="tab"><div id="productName1"></div></a></li>
+    			<li class="nav-item"><a class="nav-link" href="#product2"  role="tab" data-toggle="tab"><div id="productName2"></div></a></li>
+    			<li class="nav-item"><a class="nav-link" href="#product3"  role="tab" data-toggle="tab"><div id="productName3"></div></a></li>
+    			<li class="nav-item"><a class="nav-link" href="#product4"  role="tab" data-toggle="tab"><div id="productName4"></div></a></li>
   		  </ul>
       <p></p>
 			<div class="tab-content">
-  		  <div role="tabpanel" class="tab-pane active" id="tomatos">
+  		  <div role="tabpanel" class="tab-pane active" id="product1">
   			  <!-- Nav tabs -->
   			  <ul class="nav nav-tabs" role="tablist">
-    				<li class="nav-item"><a class="nav-link active" href="#conventionaltomatos" aria-controls="conventionaltomatos" role="tab" data-toggle="tab">Tomaten</a></li>
-    				<li class="nav-item"><a class="nav-link" href="#biotomatos" aria-controls="biotomatos" role="tab" data-toggle="tab">Bio Tomaten</a></li>
+    				<li class="nav-item"><a class="nav-link active" href="#conventionaltomatoes" aria-controls="conventionaltomatoes" role="tab" data-toggle="tab"><div id="productNameFirst1"></div></a></li>
+    				<li class="nav-item"><a class="nav-link" href="#biotomatoes" aria-controls="biotomatoes" role="tab" data-toggle="tab"><div id="productNameLast1"></div></a></li>
   				</ul>
   			  <!-- Tab panes -->
   			  <div class="tab-content">
-  				  <div role="tabpanel" class="tab-pane" id="conventionaltomatos">
+  				  <div role="tabpanel" class="tab-pane active" id="conventionaltomatoes">
               <div class="row">
                 <div class="col-8">
                   <p></p>
-                  <h6><b>Produktbeschreibung:</b></h6>
-                  <p>Strauch-, Rispen- oder Buschtomaten sind Tomaten, die mit Kelch und Stielen geerntet werden. Es gibt Cherry-, Roma- und runde Tomaten mit Rispe. Fruchtig (viel Fruchtsäure). Tomaten waschen und den Stängelansatz sowie grüne Stellen gründlich entfernen, diese enthalten Solanin, einen Stoff der gesundheitsschädlich ist und u.a. Kopfschmerzen verursachen kann. Tomaten sind druck- und transportempfindlich. Tomaten nicht im Kühlschrank aufbewahren, da sie dann an Aroma verlieren, glasig und vorzeitig weich werden.</p>
-                  <h6><b>Ursprungsland:</b></h6><p>Marokko oder Spanien; Kl.: I; Ursprungsland und Handelsklasse können je nach Angebot abweichen. </p>
-                </div>
+                  <div id="productDescriptionFirst1" align="left"></div>
+                  </div>
                 <div class="col-4">
-                  <img class="pull-right img-responsive" src="img/tomatos.png" style="width:300px;height:300px;">
+                  <img class="pull-right img-responsive" id='imageFirst1' style="width:300px;height:300px;">
                 </div>
               </div>
             </div>
-            <div role="tabpanel" class="tab-pane active" id="biotomatos">
+            <div role="tabpanel" class="tab-pane" id="biotomatoes">
               <div class="row">
                 <div class="col-8">
                   <p></p>
-                  <h6><b>Produktbeschreibung:</b></h6>
-                  <p>Strauch-, Rispen- oder Buschtomaten sind Tomaten, die mit Kelch und Stielen geerntet werden. Es gibt Cherry-, Roma- und runde Tomaten mit Rispe. Fruchtig (viel Fruchtsäure). Tomaten waschen und den Stängelansatz sowie grüne Stellen gründlich entfernen, diese enthalten Solanin, einen Stoff der gesundheitsschädlich ist und u.a. Kopfschmerzen verursachen kann. Tomaten sind druck- und transportempfindlich. Tomaten nicht im Kühlschrank aufbewahren, da sie dann an Aroma verlieren, glasig und vorzeitig weich werden.</p>
-                  <h6><b>Eigenschaften:</b></h6>
-                  <p>Bio<br>Umweltverträgliche und ressourcenschonend Produktion.</br></p>
-                  <h6><b>Ursprungsland:</b></h6><p>Spanien oder Deutschland; Kl.: II; Ursprungsland und Klasse können je nach Angebot abweichen.</p>
-                </div>
+                  <div id="productDescriptionLast1" align="left"></div>
+                  </div>
                 <div class="col-4">
-                  <img class="pull-right img-responsive" src="img/bio_tomatos.png" style="width:300px;height:300px;">
+                  <img class="pull-right img-responsive" id='imageLast1' style="width:300px;height:300px;">
                 </div>
               </div>
             </div>
           </div>
   		   </div>
 
-				 <div role="tabpanel" class="tab-pane" id="bananas">
+				 <div role="tabpanel" class="tab-pane" id="product2">
 				  <!-- Nav tabs -->
 				  <ul class="nav nav-tabs" role="tablist">
-  					<li class="nav-item"><a class="nav-link active" href="#biobananas" aria-controls="bioaplles" role="tab" data-toggle="tab">Bio Bananen</a></li>
-  					<li class="nav-item"><a class="nav-link" href="#conventionalbananas" aria-controls="concentionalbananas" role="tab" data-toggle="tab">Bananen</a></li>
+  					<li class="nav-item"><a class="nav-link active" href="#biobananas" aria-controls="bioaplles" role="tab" data-toggle="tab"><div id="productNameFirst2"></div></a></li>
+  					<li class="nav-item"><a class="nav-link" href="#conventionalbananas" aria-controls="concentionalbananas" role="tab" data-toggle="tab"><div id="productNameLast2"></div></a></li>
 					</ul>
 				  <!-- Tab panes -->
 				  <div class="tab-content">
@@ -75,13 +72,10 @@
               <div class="row">
                 <div class="col-8">
                   <p></p>
-                  <h6><b>Produktbeschreibung:</b></h6>
-                  <p>Bananen werden grün geerntet, denn sie reifen nach. Sie werden auf besonderen Bananenschiffen in die Verbraucherländer transportiert. Vorwiegend angebaut in Ecuador, Panama, Costa Rica, Kolumbien und Dominikanische Republik. Fleischig, aromatisch und je nach Reifegrad von leicht säuerlich bis sehr süß. Bananen vor Zugluft schützen! Bei zu kühlen Temperaturen färbt sich die Schale gelblich-grau bis schwarz und es kommt zu Aromaverlusten. Sie liefern schnell Energie und stellen eine gute Zwischenmahlzeit auch für unterwegs dar. Die Krümmung der Banane entsteht während des Wachstums hormonbedingt.</p>
-                  <h6><b>Eigenschaften:</b></h6><p>Bio<br>Umweltverträgliche und ressourcenschonend Produktion.</br></p>
-                  <h6><b>Ursprungsland:</b></h6><p>Dominikanische Republik, Ecuador oder Peru; Kl.: M; Ursprungsland und Klasse können je nach Angebot abweichen.</p>
+                  <div id="productDescriptionFirst2" align="left"></div>
                 </div>
                 <div class="col-4">
-                  <img class="pull-right img-responsive" src="img/bio_bananas.png" style="width:300px;height:300px;">
+                  <img class="pull-right img-responsive" id='imageFirst2' style="width:300px;height:300px;">
                 </div>
               </div>
             </div>
@@ -89,36 +83,32 @@
               <div class="row">
                 <div class="col-8">
                   <p></p>
-                  <h6><b>Produktbeschreibung:</b></h6>
-                  <p>Bananen werden grün geerntet, denn sie reifen nach. Sie werden auf besonderen Bananenschiffen in die Verbraucherländer transportiert. Vorwiegend angebaut in Ecuador, Panama, Costa Rica, Kolumbien und Dominikanische Republik. Fleischig, aromatisch und je nach Reifegrad von leicht säuerlich bis sehr süß. Bananen vor Zugluft schützen! Bei zu kühlen Temperaturen färbt sich die Schale gelblich-grau bis schwarz und es kommt zu Aromaverlusten. Sie liefern schnell Energie und stellen eine gute Zwischenmahlzeit auch für unterwegs dar. Die Krümmung der Banane entsteht während des Wachstums hormonbedingt.</p>
-                  <h6><b>Ursprungsland:</b></h6><p>Kl.: M; Ursprungsland und Klasse können je nach Angebot abweichen.</p>
+                  <div id="productDescriptionLast2" align="left"></div>
                 </div>
                 <div class="col-4">
-                  <img class="pull-right img-responsive" src="img/bananas.png" style="width:300px;height:300px;">
+                  <img class="pull-right img-responsive" id='imageLast2' style="width:300px;height:300px;">
                 </div>
               </div>
             </div>
 				  </div>
 				</div>
 
-				<div role="tabpanel" class="tab-pane" id="coffee">
+				<div role="tabpanel" class="tab-pane" id="product3">
 				  <!-- Nav tabs -->
 				  <ul class="nav nav-tabs" role="tablist">
-  					<li class="nav-item"><a class="nav-link active" href="#conventionalcoffee" aria-controls="conventionalcoffee" role="tab" data-toggle="tab">Kaffee</a></li>
-  					<li class="nav-item"><a class="nav-link" href="#biocoffee" aria-controls="biocoffee" role="tab" data-toggle="tab">Bio Kaffee</a></li>
+  					<li class="nav-item"><a class="nav-link active" href="#conventionalcoffee" aria-controls="conventionalcoffee" role="tab" data-toggle="tab"><div id="productNameFirst3"></div></a></li>
+  					<li class="nav-item"><a class="nav-link" href="#biocoffee" aria-controls="biocoffee" role="tab" data-toggle="tab"><div id="productNameLast3"></div></a></li>
 				  </ul>
 				  <!-- Tab panes -->
 				  <div class="tab-content">
-						<div role="tabpanel" class="tab-pane" id="conventionalcoffee">
+						<div role="tabpanel" class="tab-pane active" id="conventionalcoffee">
               <div class="row">
                 <div class="col-8">
                   <p></p>
-                  <h6><b>Produktbeschreibung:</b></h6>
-                  <p>Schonend geröstete Bohnen aus 100% Arabica verleihen diesem besonderen Kaffeegenuss ein einzigartiges Aroma. Trocken lagern und vor Wärme schützen.<br>Mild. Gemahlener Röstkaffee.</br></p>
-      						<h6><b>Ursprungsland:</b></h6><p>Deutschland</p>
-                </div>
+                  <div id="productDescriptionFirst3" align="left"></div>
+                  </div>
                 <div class="col-4">
-                  <img class="pull-right img-responsive" src="img/coffee.png" style="width:300px;height:300px;">
+                  <img class="pull-right img-responsive" id='imageFirst3' style="width:300px;height:300px;">
                 </div>
               </div>
 						</div>
@@ -126,24 +116,21 @@
               <div class="row">
                 <div class="col-8">
                   <p></p>
-                  <h6><b>Produktbeschreibung:</b></h6>
-                  <p>Schonend geröstete Bohnen aus 100% Arabica verleihen diesem besonderen Kaffeegenuss ein einzigartiges Aroma. Trocken lagern und vor Wärme schützen.<br>Mild. Gemahlener Röstkaffee.</br></p>
-                  <h6><b>Eigenschaften:</b></h6><p>Bio<br>Umweltverträgliche und ressourcenschonend Produktion.</br></p>
-                  <h6><b>Ursprungsland:</b></h6><p>Deutschland</p>
-                </div>
+                  <div id="productDescriptionLast3" align="left"></div>
+                  </div>
                 <div class="col-4">
-                  <img class="pull-right img-responsive" src="img/bio_coffee.png" style="width:300px;height:300px;">
+                  <img class="pull-right img-responsive" id='imageLast3' style="width:300px;height:300px;">
                 </div>
               </div>
 						</div>
 					 </div>
 				</div>
 
-				<div role="tabpanel" class="tab-pane" id="milk">
+				<div role="tabpanel" class="tab-pane" id="product4">
 				  <!-- Nav tabs -->
 				  <ul class="nav nav-tabs" role="tablist">
-  					<li class="nav-item"><a class="nav-link active" href="#biomilk" aria-controls="biomilk" role="tab" data-toggle="tab">Bio Milch</a></li>
-  					<li class="nav-item"><a class="nav-link" href="#conventionalmilk" aria-controls="conventionalmilk" role="tab" data-toggle="tab">Milch</a></li>
+  					<li class="nav-item"><a class="nav-link active" href="#biomilk" aria-controls="biomilk" role="tab" data-toggle="tab"><div id="productNameFirst4"></div></a></li>
+  					<li class="nav-item"><a class="nav-link" href="#conventionalmilk" aria-controls="conventionalmilk" role="tab" data-toggle="tab"><div id="productNameLast4"></div></a></li>
 				  </ul>
 				  <!-- Tab panes -->
 				  <div class="tab-content">
@@ -151,13 +138,10 @@
               <div class="row">
                 <div class="col-8">
                   <p></p>
-                  <h6><b>Produktbeschreibung:</b></h6>
-                    <p>Bei diesen Produkten bieten wir Ihnen beste Frische und Qualität. Bitte beachten Sie daher, dass frische Milch nur eine kurze Restlaufzeit hat.<br>Frische fettarme Bio Milch, 1,5 % Fett, pasteurisiert, homogenisiert, länger haltbar.</br><p/>
-                  <h6><b>Eigenschaften:</b></h6><p>Bio<br>Umweltverträgliche und ressourcenschonend Produktion.</br></p>
-                  <h6><b>Ursprungsland:</b></h6><p>Deutschland</p>
-                </div>
+                  <div id="productDescriptionFirst4" align="left"></div>
+                  </div>
                 <div class="col-4">
-                  <img class="pull-right img-responsive" src="img/bio_milk.png" style="width:300px;height:300px;">
+                  <img class="pull-right img-responsive" id='imageFirst4' style="width:300px;height:300px;">
                 </div>
               </div>
             </div>
@@ -165,21 +149,21 @@
               <div class="row">
                 <div class="col-8">
                   <p></p>
-                  <h6><b>Produktbeschreibung:</b></h6>
-                    <p>Bei diesen Produkten bieten wir Ihnen beste Frische und Qualität. Bitte beachten Sie daher, dass frische Milch nur eine kurze Restlaufzeit hat.<br>Frische fettarme Milch, 1,5 % Fett, pasteurisiert, homogenisiert, länger haltbar.</br><p/>
-                  <h6><b>Ursprungsland:</b></h6><p>Deutschland</p>
-                </div>
+                  <div id="productDescriptionLast4" align="left"></div>
+                  </div>
                 <div class="col-4">
-                  <img class="pull-right img-responsive" src="img/milk.png" style="width:300px;height:300px;">
+                  <img class="pull-right img-responsive" id='imageLast4' style="width:300px;height:300px;">
                 </div>
               </div>
             </div>
 					</div>
 				</div>
 			</div>
-      <br></br>
       <hr>
-      <button type="button" class="btn btn-primary float-right" onclick="window.location='productselection.html'">Weiter</button>
+      <label>
+        <input type="checkbox" id="allRead"> Ich habe alle Informationen gelesen.
+      </label>
+      <button type="button" class="btn btn-primary float-right" onclick="descriptionCheck()">Weiter</button>
     </div>
 
 
@@ -188,7 +172,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="scripts.js"></script>
+    <script src="handleProductDescription.js"></script>
   </body>
 </html>

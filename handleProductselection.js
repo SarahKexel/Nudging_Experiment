@@ -3,10 +3,10 @@ const AMOUNT_SELECTIONS = 4;
 const items = [
   {
     id: 1,
-    productName: 'tomatos',
+    productName: 'tomatoes',
     printName: 'Tomaten',
-    image: 'tomatos.png',
-    imageBio: 'bio_tomatos.png',
+    image: 'tomatoes.png',
+    imageBio: 'bio_tomatoes.png',
     productDescriptionBio: '<h6><b>Produktbeschreibung:</b></h6><p>Strauch-, Rispen- oder Buschtomaten sind Tomaten, die mit Kelch und Stielen geerntet werden. Es gibt Cherry-, Roma- und runde Tomaten mit Rispe. Fruchtig (viel Fruchtsäure). Tomaten waschen und den Stängelansatz sowie grüne Stellen gründlich entfernen, diese enthalten Solanin, einen Stoff der gesundheitsschädlich ist und u.a. Kopfschmerzen verursachen kann. Tomaten sind druck- und transportempfindlich. Tomaten nicht im Kühlschrank aufbewahren, da sie dann an Aroma verlieren, glasig und vorzeitig weich werden.</p><h6><b>Eigenschaften:</b></h6><p>Bio<br>Umweltverträgliche und ressourcenschonend Produktion.</br></p><h6><b>Ursprungsland:</b></h6><p>Spanien oder Deutschland; Kl.: II; Ursprungsland und Klasse können je nach Angebot abweichen.</p>',
     productDescription: '<h6><b>Produktbeschreibung:</b></h6><p>Strauch-, Rispen- oder Buschtomaten sind Tomaten, die mit Kelch und Stielen geerntet werden. Es gibt Cherry-, Roma- und runde Tomaten mit Rispe. Fruchtig (viel Fruchtsäure). Tomaten waschen und den Stängelansatz sowie grüne Stellen gründlich entfernen, diese enthalten Solanin, einen Stoff der gesundheitsschädlich ist und u.a. Kopfschmerzen verursachen kann. Tomaten sind druck- und transportempfindlich. Tomaten nicht im Kühlschrank aufbewahren, da sie dann an Aroma verlieren, glasig und vorzeitig weich werden.</p><h6><b>Ursprungsland:</b></h6><p>Marokko oder Spanien; Kl.: I; Ursprungsland und Handelsklasse können je nach Angebot abweichen. </p>',
     nudge: Math.random() >= 0.5,
