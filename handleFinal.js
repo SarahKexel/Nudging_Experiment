@@ -19,6 +19,7 @@ function forwardToUniPark() {
   let milkBioFirst = sessionStorage.getItem('milkBioFirst');
   let milkNudge = sessionStorage.getItem('milkNudge');
   let milkTendency = sessionStorage.getItem('milkTendency');
+  let nudgeDisclosure = sessionStorage.getItem('disclosure');
 
 
   let forwardString = 'https://www.unipark.de/uc/KIT_IISM_ISSD_Maedche/9f58/'
@@ -41,7 +42,8 @@ function forwardToUniPark() {
   + '&q=' + milkBio2
   + '&r=' + milkBioFirst
   + '&s=' + milkNudge
-  + '&t=' + milkTendency;
+  + '&t=' + milkTendency
+  + '&u=' + nudgeDisclosure
 
   window.location.href=forwardString;
 }
