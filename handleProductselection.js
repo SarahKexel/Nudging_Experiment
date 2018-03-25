@@ -178,12 +178,16 @@ function handleSelection() {
         document.getElementById('imageLast').src="img/" + items[clicks].image;
         document.getElementById('productNameFirst').innerHTML="Bio "+ items[clicks].printName;
         document.getElementById('productNameLast').innerHTML=items[clicks].printName;
+        document.getElementById('productDescriptionFirst').innerHTML=items[clicks].productDescriptionBio;
+        document.getElementById('productDescriptionLast').innerHTML=items[clicks].productDescription;
       }
       else{
         document.getElementById('imageFirst').src="img/" + items[clicks].image;
         document.getElementById('imageLast').src="img/" + items[clicks].imageBio;
         document.getElementById('productNameFirst').innerHTML=items[clicks].printName;
         document.getElementById('productNameLast').innerHTML="Bio "+ items[clicks].printName;
+        document.getElementById('productDescriptionFirst').innerHTML= items[clicks].productDescription;
+        document.getElementById('productDescriptionLast').innerHTML=items[clicks].productDescriptionBio;
       }
       //hide warning if exists
       document.getElementById('no-tendency').classList.add('d-none');
