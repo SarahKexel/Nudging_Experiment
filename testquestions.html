@@ -11,71 +11,65 @@
     <title>KIT Online Supermarkt Studie</title>
   </head>
   <body>
-    <div class='container mt-5'>
+    <div class='container mt-5 pb-5'>
     <p>Bitte beantworten Sie nun ein paar Testfragen, um sicherzustellen, dass Sie die Aufgabenstellung richtig verstanden haben.</p>
     <div id='no-selection' class="alert alert-danger d-none" role="alert">
       Mindestens eine Antwort ist nicht richtig. Bitte versuchen Sie es nochmal!
     </div>
-  <ol>
-    <li> Wovon handelt diese Studie?
-    <div class="radio">
-      <div class="row">
-        <label class="col-sm-6">
-            <input type="radio" name="1" id="optionsfeldRadio1" value="option1">
-            Kaufentscheidungen im Online Supermarket
-          </label>
-        <label class="col-sm-6">
-            <input type="radio" name="1" id="optionsfeldRadio2" value="option2">
-            Kaufentscheidungen im Modeversandhaus
-          </label>
+    <ol>
+      <li> Wovon handelt diese Studie?
+        <div class="radio">
+          <div class="row">
+            <label class="col-sm-6">
+                <input type="radio" name="1" id="optionsfeldRadio1" value="option1">
+                Kaufentscheidungen im Online Supermarket
+              </label>
+            <label class="col-sm-6">
+                <input type="radio" name="1" id="optionsfeldRadio2" value="option2">
+                Kaufentscheidungen im Modeversandhaus
+              </label>
+              </div>
+          <div class="row">
+            <label class="col-sm-6">
+                <input type="radio" name="1" id="optionsfeldRadio3" value="option3">
+                Entscheidung bezüglich der Versandart
+              </label>
+              <label class="col-sm-6">
+                <input type="radio" name="1" id="optionsfeldRadio4" value="option4">
+                Kaufentscheidungen im Tante Emma Laden
+              </label>
           </div>
-      <div class="row">
-        <label class="col-sm-6">
-            <input type="radio" name="1" id="optionsfeldRadio3" value="option3">
-            Entscheidung bezüglich der Versandart
-          </label>
-          <label class="col-sm-6">
-            <input type="radio" name="1" id="optionsfeldRadio4" value="option4">
-            Kaufentscheidungen im Tante Emma Laden
-          </label>
-      </div>
+        </div>
+      </li>
+      <br/>
+      <li> Welche Produkte sollen Sie heute auswählen?
+        <div class="radio">
+          <div class="row">
+            <label class="col-sm-6">
+                <input type="radio" name="2" id="optionsfeldRadio5" value="option1">
+                Tomaten und Bananen
+              </label>
+            <label class="col-sm-6">
+                <input type="radio" name="2" id="optionsfeldRadio6" value="option2">
+                Tomaten und Käse
+              </label>
+          </div>
+          <div class="row">
+            <label class="col-sm-6">
+                <input type="radio" name="2" id="optionsfeldRadio7" value="option3">
+                Pizza und Chips
+              </label>
+              <label class="col-sm-6">
+                <input type="radio" name="2" id="optionsfeldRadio8" value="option4">
+                Pizza und Käse
+              </label>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <hr>
+    <button type="button" class="btn btn-primary float-right" onclick="testSelection()">Weiter</button>
     </div>
-    </li>
-    <p></p>
-    <li> Welche Produkte sollen Sie heute auswählen?
-    <div class="radio">
-      <div class="row">
-        <label class="col-sm-6">
-            <input type="radio" name="2" id="optionsfeldRadio5" value="option1">
-            Tomaten und Bananen
-          </label>
-        <label class="col-sm-6">
-            <input type="radio" name="2" id="optionsfeldRadio6" value="option2">
-            Tomaten und Käse
-          </label>
-      </div>
-      <div class="row">
-        <label class="col-sm-6">
-            <input type="radio" name="2" id="optionsfeldRadio7" value="option3">
-            Pizza und Chips
-          </label>
-          <label class="col-sm-6">
-            <input type="radio" name="2" id="optionsfeldRadio8" value="option4">
-            Pizza und Käse
-          </label>
-      </div>
-    </div>
-    </li>
-  </ol>
-
-  <!--<div class="alert alert-danger hidden" id="alert-testfragen" role="alert">
-    Mindestens eine Antwort ist nicht richtig. Bitte versuchen Sie es nochmal!
-  </div>-->
-      <hr>
-      <button type="button" class="btn btn-primary float-right" onclick="testSelection()">Weiter</button>
-      </div>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
