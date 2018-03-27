@@ -1,0 +1,45 @@
+.btn-KIT {
+  color: #ffffff;
+  background-color: #3FA387;
+  border-color: #3FA387;
+}
+
+.btn-KIT:hover,
+.btn-KIT:focus,
+.btn-KIT:active,
+.btn-KIT.active,
+.open .dropdown-toggle.btn-KIT {
+  color: #ffffff;
+  background-color: #49247A;
+  border-color: #3FA387;
+}
+
+.btn-KIT:active,
+.btn-KIT.active,
+.open .dropdown-toggle.btn-KIT {
+  background-image: none;
+}
+
+.btn-KIT.disabled,
+.btn-KIT[disabled],
+fieldset[disabled] .btn-KIT,
+.btn-KIT.disabled:hover,
+.btn-KIT[disabled]:hover,
+fieldset[disabled] .btn-KIT:hover,
+.btn-KIT.disabled:focus,
+.btn-KIT[disabled]:focus,
+fieldset[disabled] .btn-KIT:focus,
+.btn-KIT.disabled:active,
+.btn-KIT[disabled]:active,
+fieldset[disabled] .btn-KIT:active,
+.btn-KIT.disabled.active,
+.btn-KIT[disabled].active,
+fieldset[disabled] .btn-KIT.active {
+  background-color: #3FA387;
+  border-color: #3FA387;
+}
+
+.btn-KIT .badge {
+  color: #3FA387;
+  background-color: #ffffff;
+}

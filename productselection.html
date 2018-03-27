@@ -4,14 +4,21 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <style>
+    .btn-KIT {
+      color: #ffffff;
+      background-color: #32a189;
+      border-color: #32a189;
+    }
+    </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>KIT Online Supermarkt Studie</title>
   </head>
   <body>
-    <div id='shop' class='container mt-5 mb-5'>
+    <div id='shop' class='container mt-5 pb-5'>
+      <img class="float-right img-responsive" src="img/KIT.png" style="height:50px;">
       <h4>Ihr KIT Online Supermarkt</h4>
 			<hr>
   		<div id='productselector'>
@@ -50,7 +57,7 @@
           </div>
         </form>
         <hr>
-        <button type="button" class="btn btn-primary float-right" onclick="getConfirmation()">Auswählen</button>
+        <button type="button" class="btn btn-KIT float-right" onclick="getConfirmation()">Auswählen</button>
   		</div>
 
       <div id='confirmation' class='d-none'>
@@ -59,6 +66,12 @@
     		Bitte wählen Sie eine Antwortmöglichkeit aus und klicken Sie auf "Weiter".
     		</div>
         <form id='form_tendency'>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-12">
+              <img class="img-responsive" src="img/tendencyscale.png" style="max-width: 100%;">
+            </div>
+          </div>
+        </br>
       		<div class="row" id="fuzzyradio">
       			<div class="col-md-2">
       				<div class="radio">
@@ -108,11 +121,11 @@
     				    </label>
       				</div>
       			</div>
-      			... zur gewählten Alternative.
+      			<p>... zur gewählten Alternative.</p>
       		</div>
         </form>
         <hr>
-        <button type="button" class="btn btn-primary float-right" onclick="handleSelection()">Weiter</button>
+        <button type="button" class="btn btn-KIT float-right" onclick="handleSelection()">Weiter</button>
       </div>
     </div>
     <!-- Optional JavaScript -->
