@@ -53,16 +53,16 @@ window.onload = function (){
 
 
     if(items[0].bioFirst){
-      document.getElementById('imageFirst1').src="img/" + items[0].imageBio;
-      document.getElementById('imageLast1').src="img/" + items[0].image;
+      document.getElementById('imageFirst1').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[0].imageBio;
+      document.getElementById('imageLast1').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[0].image;
       document.getElementById('productNameFirst1').innerHTML= "Bio " + items[0].printName;
       document.getElementById('productNameLast1').innerHTML=items[0].printName;
       document.getElementById('productDescriptionFirst1').innerHTML=items[0].productDescriptionBio;
       document.getElementById('productDescriptionLast1').innerHTML=items[0].productDescription;
     }
     else{
-      document.getElementById('imageFirst1').src="img/" + items[0].image;
-      document.getElementById('imageLast1').src="img/" + items[0].imageBio;
+      document.getElementById('imageFirst1').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[0].image;
+      document.getElementById('imageLast1').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[0].imageBio;
       document.getElementById('productNameFirst1').innerHTML= items[0].printName;
       document.getElementById('productNameLast1').innerHTML="Bio "+ items[0].printName;
       document.getElementById('productDescriptionFirst1').innerHTML= items[0].productDescription;
@@ -70,16 +70,16 @@ window.onload = function (){
     }
 
     if(items[1].bioFirst){
-      document.getElementById('imageFirst2').src="img/" + items[1].imageBio;
-      document.getElementById('imageLast2').src="img/" + items[1].image;
+      document.getElementById('imageFirst2').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[1].imageBio;
+      document.getElementById('imageLast2').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[1].image;
       document.getElementById('productNameFirst2').innerHTML= "Bio " + items[1].printName;
       document.getElementById('productNameLast2').innerHTML=items[1].printName;
       document.getElementById('productDescriptionFirst2').innerHTML=items[1].productDescriptionBio;
       document.getElementById('productDescriptionLast2').innerHTML=items[1].productDescription;
     }
     else{
-      document.getElementById('imageFirst2').src="img/" + items[1].image;
-      document.getElementById('imageLast2').src="img/" + items[1].imageBio;
+      document.getElementById('imageFirst2').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[1].image;
+      document.getElementById('imageLast2').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[1].imageBio;
       document.getElementById('productNameFirst2').innerHTML= items[1].printName;
       document.getElementById('productNameLast2').innerHTML="Bio "+ items[1].printName;
       document.getElementById('productDescriptionFirst2').innerHTML= items[1].productDescription;
@@ -87,16 +87,16 @@ window.onload = function (){
     }
 
     if(items[2].bioFirst){
-      document.getElementById('imageFirst3').src="img/" + items[2].imageBio;
-      document.getElementById('imageLast3').src="img/" + items[2].image;
+      document.getElementById('imageFirst3').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[2].imageBio;
+      document.getElementById('imageLast3').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[2].image;
       document.getElementById('productNameFirst3').innerHTML= "Bio " + items[2].printName;
       document.getElementById('productNameLast3').innerHTML=items[2].printName;
       document.getElementById('productDescriptionFirst3').innerHTML=items[2].productDescriptionBio;
       document.getElementById('productDescriptionLast3').innerHTML=items[2].productDescription;
     }
     else{
-      document.getElementById('imageFirst3').src="img/" + items[2].image;
-      document.getElementById('imageLast3').src="img/" + items[2].imageBio;
+      document.getElementById('imageFirst3').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[2].image;
+      document.getElementById('imageLast3').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[2].imageBio;
       document.getElementById('productNameFirst3').innerHTML= items[2].printName;
       document.getElementById('productNameLast3').innerHTML="Bio "+ items[2].printName;
       document.getElementById('productDescriptionFirst3').innerHTML= items[2].productDescription;
@@ -104,16 +104,16 @@ window.onload = function (){
     }
 
     if(items[3].bioFirst){
-      document.getElementById('imageFirst4').src="img/" + items[3].imageBio;
-      document.getElementById('imageLast4').src="img/" + items[3].image;
+      document.getElementById('imageFirst4').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[3].imageBio;
+      document.getElementById('imageLast4').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[3].image;
       document.getElementById('productNameFirst4').innerHTML= "Bio " + items[3].printName;
       document.getElementById('productNameLast4').innerHTML=items[3].printName;
       document.getElementById('productDescriptionFirst4').innerHTML=items[3].productDescriptionBio;
       document.getElementById('productDescriptionLast4').innerHTML=items[3].productDescription;
     }
     else{
-      document.getElementById('imageFirst4').src="img/" + items[3].image;
-      document.getElementById('imageLast4').src="img/" + items[3].imageBio;
+      document.getElementById('imageFirst4').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[3].image;
+      document.getElementById('imageLast4').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[3].imageBio;
       document.getElementById('productNameFirst4').innerHTML= items[3].printName;
       document.getElementById('productNameLast4').innerHTML="Bio "+ items[3].printName;
       document.getElementById('productDescriptionFirst4').innerHTML= items[3].productDescription;

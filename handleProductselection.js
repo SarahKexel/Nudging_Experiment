@@ -64,8 +64,8 @@ window.onload = function (){
     if(items[clicks].nudge){
       document.getElementById('optionFirst').checked="true";
     }
-    document.getElementById('imageFirst').src="img/" + items[clicks].imageBio;
-    document.getElementById('imageLast').src="img/" + items[clicks].image;
+    document.getElementById('imageFirst').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[clicks].imageBio;
+    document.getElementById('imageLast').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[clicks].image;
     document.getElementById('productNameFirst').innerHTML= "Bio " + items[clicks].printName;
     document.getElementById('productNameLast').innerHTML=items[clicks].printName;
     document.getElementById('productDescriptionFirst').innerHTML=items[clicks].productDescriptionBio;
@@ -76,8 +76,8 @@ window.onload = function (){
     if(items[clicks].nudge){
       document.getElementById('optionLast').checked="true";
     }
-    document.getElementById('imageFirst').src="img/" + items[clicks].image;
-    document.getElementById('imageLast').src="img/" + items[clicks].imageBio;
+    document.getElementById('imageFirst').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[clicks].image;
+    document.getElementById('imageLast').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[clicks].imageBio;
     document.getElementById('productNameFirst').innerHTML= items[clicks].printName;
     document.getElementById('productNameLast').innerHTML="Bio "+ items[clicks].printName;
     document.getElementById('productDescriptionFirst').innerHTML= items[clicks].productDescription;
@@ -174,16 +174,16 @@ function handleSelection() {
         document.getElementById('optionLast').checked="true";
       }
       if(items[clicks].bioFirst){
-        document.getElementById('imageFirst').src="img/" + items[clicks].imageBio;
-        document.getElementById('imageLast').src="img/" + items[clicks].image;
+        document.getElementById('imageFirst').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[clicks].imageBio;
+        document.getElementById('imageLast').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[clicks].image;
         document.getElementById('productNameFirst').innerHTML="Bio "+ items[clicks].printName;
         document.getElementById('productNameLast').innerHTML=items[clicks].printName;
         document.getElementById('productDescriptionFirst').innerHTML=items[clicks].productDescriptionBio;
         document.getElementById('productDescriptionLast').innerHTML=items[clicks].productDescription;
       }
       else{
-        document.getElementById('imageFirst').src="img/" + items[clicks].image;
-        document.getElementById('imageLast').src="img/" + items[clicks].imageBio;
+        document.getElementById('imageFirst').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[clicks].image;
+        document.getElementById('imageLast').src="https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + items[clicks].imageBio;
         document.getElementById('productNameFirst').innerHTML=items[clicks].printName;
         document.getElementById('productNameLast').innerHTML="Bio "+ items[clicks].printName;
         document.getElementById('productDescriptionFirst').innerHTML= items[clicks].productDescription;

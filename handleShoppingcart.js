@@ -26,10 +26,10 @@ function setProductName(productName, bioChoice){
 
 function setImageForProduct(productName, bioChoice){
   if (bioChoice == 'true') {
-    image = "img/bio_" + productName + ".png";
+    image = "https://s3.eu-central-1.amazonaws.com/kit-online-store/img/bio_" + productName + ".png";
   }
   else {
-    image = "img/" + productName + ".png";
+    image = "https://s3.eu-central-1.amazonaws.com/kit-online-store/img/" + productName + ".png";
   }
   document.getElementById("image"+productName).src = image;
 };
